@@ -1,0 +1,202 @@
+
+/* Registation part start */
+#registation{
+    @apply lg:h-screen flex items-center
+}
+#registation .main{
+    @apply container mt-2 px-2 lg:px-3 mx-auto 
+    flex justify-between items-center flex-wrap
+}
+#registation .main .left{
+    @apply w-full lg:w-[50%] mt-14 lg:mt-0
+    
+}
+
+#registation .main .right{
+    @apply w-full lg:w-[48%]
+}
+
+
+#registation .main .left .main_heading{
+    @apply text-5xl font-bold 
+    text-primary capitalize font-poppins 
+}
+#registation .main .left .main_p{
+    @apply text-xl text-fiveth
+}
+#registation .main .left .ipt{
+    @apply mt-[30px] md:mt-[50px]
+}
+
+#registation .main .left input{
+    @apply w-full border border-primary 
+    rounded-lg !p-2 mb-3
+}
+
+.button_v1{
+    @apply w-full px-5 py-4 bg-third
+     text-secendary font-roboto uppercase
+     mt-[20px] font-bold text-xl 
+     hover:bg-forth hover:text-primary
+      hover:border-primary hover:rounded-lg 
+      hover:text-xl hover:font-bold hover:font-poppins 
+    
+      
+}
+
+
+.erros_text{
+    @apply text-base text-six font-poppins 
+   mb-[5px] text-left
+}
+
+
+/* Registation part end */
+
+
+
+/* Header part start */
+
+/* #header{
+    @apply bg-primary py-6 
+} */
+
+#header .main{
+    @apply container  px-1 lg:px-2 mx-auto flex justify-between  flex-wrap  
+}
+#header .main .left{
+    @apply h-[830px] w-[23%] md:w-[15%] text-white  mt-4 rounded-lg
+    shadow-[rgba(0,_0,_0,_0.24)_0px_3px_8px] bg-primary flex justify-center border-2 border-forth
+     
+}
+
+#header .main .left .profilename{
+    @apply mt-[130px] font-poppins  md:text-[none] text-xl font-bold text-center absolute
+}
+#header .main .left .profile_icons{
+    @apply mt-[215px] font-poppins  font-bold text-center absolute
+}
+#header .main .left .profile_icons svg{
+    @apply h-[35px] w-[35px] md:h-[50px] md:w-[50px]  mt-5 cursor-pointer
+}
+
+#header .main .left .logout_icons{
+    @apply mt-[750px] font-poppins  font-bold text-center absolute
+}
+#header .main .left .logout_icons svg{
+    @apply  h-[35px] w-[35px]  md:h-[50px] md:w-[50px] cursor-pointer
+}
+
+
+#header .main .left .img{
+    @apply w-[70px] h-[70px] lg:w-[100px] lg:h-[100px] rounded-full mt-3 bg-zinc-50 
+    items-center overflow-hidden relative
+}
+#header .main .left .img img{
+    @apply w-full
+}
+#header .main .left .img .upload_icon{
+    @apply absolute hidden top-0 left-0 w-full bg-black h-full flex justify-center
+    items-center bg-opacity-70 cursor-pointer 
+}
+#header .main .left .img .upload_icon svg{
+    @apply text-secendary text-3xl
+}
+#header .main .left .img:hover .upload_icon{
+    @apply flex
+}
+
+
+
+
+#header .main .right{
+    @apply flex justify-between w-[75%] lg:w-[82%]  mt-6 flex-wrap px-2
+}
+
+#header .main .right .item{
+   @apply w-[100%] md:w-[48%] lg:w-[32%] 
+}
+
+.list {
+    @apply p-2 relative h-[400px] overflow-y-scroll mb-5  rounded-lg shadow-[rgba(50,_50,_105,_0.15)_0px_2px_5px_0px,_rgba(0,_0,_0,_0.05)_0px_1px_1px_0px]
+     border-b border-forth
+}
+.list .list_header{
+    @apply flex justify-between items-center sticky top-[-9px] mt-[-15px] z-50 mb-2 bg-white left-0 
+}
+
+.list .list_header h2{
+    @apply text-2xl font-roboto font-bold text-primary font-bold
+}
+.list svg{
+    @apply text-[20px] text-forth font-bold cursor-pointer
+}
+
+
+.list .listItem {
+    @apply pb-2 flex justify-between items-center border-b border-forth
+}
+
+.list .listItem .imgAndName {
+    @apply flex gap-7 items-center mt-4
+}
+.list .listItem .imgAndName .img{
+    @apply w-[30px] md:w-[60px] h-[30px] md:h-[60px] rounded-full bg-forth overflow-hidden
+}
+.list .listItem .imgAndName .img img{
+    @apply  w-full object-cover 
+}
+.list .listItem .imgAndName .name{
+    @apply ml-[-15px] 
+}
+.list .listItem .imgAndName .name h1{
+    @apply font-poppins text-[16px] font-bold text-primary
+
+}
+.list .listItem .imgAndName .name p{
+    @apply font-openSans text-[10px] 
+
+}
+.list .listItem .button_v2 svg{
+    @apply text-white text-base
+}
+.list .listItem .time p{
+    @apply text-[10px]
+}
+
+
+
+/* Header part end */
+
+/* button start */
+.button_v2{
+    transition: .3s;
+    @apply px-2 py-2 mt-4 text-white bg-third rounded-lg transform active:scale-[1.1] w-full  hover:bg-forth; 
+}
+.button_v3{
+    transition: .3s;
+    @apply px-[1px] py-[1px] md:px-2 md:py-2 mt-4 text-[15px] text-white bg-forth rounded-lg transform active:scale-[1.1] w-full hover:bg-primary; 
+}
+.button_v4{
+    transition: .3s;
+    @apply px-1 py-1 md:px-2 md:py-2 mt-4 text-[15px] text-white bg-six rounded-lg transform active:scale-[1.1] w-full hover:bg-primary;  
+}
+
+
+/* button end */
+/* scrollber start */
+.list::-webkit-scrollbar{
+    @apply w-[3px]
+}
+.list::-webkit-scrollbar-thumb{
+    @apply bg-primary 
+}
+
+/* scrollber end */
+
+/* navber part start */
+
+
+
+/* navber part end */
+
